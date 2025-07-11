@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/sitefx/static/css/main.461b2883.css",
+    "main.js": "/sitefx/static/js/main.500cc5bd.js",
+    "static/js/488.607dd935.chunk.js": "/sitefx/static/js/488.607dd935.chunk.js",
+    "static/media/foto_perfil.jpg": "/sitefx/static/media/foto_perfil.c81087ccf024bcfac51b.jpg",
+    "index.html": "/sitefx/index.html",
+    "main.461b2883.css.map": "/sitefx/static/css/main.461b2883.css.map",
+    "main.500cc5bd.js.map": "/sitefx/static/js/main.500cc5bd.js.map",
+    "488.607dd935.chunk.js.map": "/sitefx/static/js/488.607dd935.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.461b2883.css",
+    "static/js/main.500cc5bd.js"
+  ]
+}
