@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/sitefxt/static/css/main.7e1a5f59.css",
-    "main.js": "/sitefxt/static/js/main.6bf57c01.js",
+    "main.js": "/sitefxt/static/js/main.051d9054.js",
     "static/js/488.607dd935.chunk.js": "/sitefxt/static/js/488.607dd935.chunk.js",
     "static/media/foto_perfil.jpg": "/sitefxt/static/media/foto_perfil.c81087ccf024bcfac51b.jpg",
     "index.html": "/sitefxt/index.html",
     "main.7e1a5f59.css.map": "/sitefxt/static/css/main.7e1a5f59.css.map",
-    "main.6bf57c01.js.map": "/sitefxt/static/js/main.6bf57c01.js.map",
+    "main.051d9054.js.map": "/sitefxt/static/js/main.051d9054.js.map",
     "488.607dd935.chunk.js.map": "/sitefxt/static/js/488.607dd935.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7e1a5f59.css",
-    "static/js/main.6bf57c01.js"
+    "static/js/main.051d9054.js"
   ]
 }
