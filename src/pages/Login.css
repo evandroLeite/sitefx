@@ -1,0 +1,115 @@
+.login-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1c2833, #0f4c75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-box {
+  background-color: #ffffffdd;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.login-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #073763;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.login-input {
+  padding: 14px 18px;
+  border-radius: 12px;
+  border: 2px solid #bbb;
+  font-size: 17px;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+  color: #222;
+}
+
+/* placeholder padrão */
+.login-input::placeholder {
+  color: #999;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+
+.login-input.error {
+  border-color: #d32f2f;
+  box-shadow: 0 0 8px #d32f2f88;
+  color: #d32f2f; /* texto digitado fica normal, só placeholder vermelho */
+}
+
+/* placeholder vermelho para input com erro */
+.login-input.error::placeholder {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+/* foco padrão */
+.login-input:focus {
+  border-color: #007795;
+  box-shadow: 0 0 8px #007795aa;
+  color: #222;
+}
+
+.login-button {
+  background: linear-gradient(45deg, #007795, #004e61);
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 14px 0;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.15s ease;
+  box-shadow: 0 6px 12px rgba(0, 119, 149, 0.6);
+}
+
+.login-button:hover {
+  background: linear-gradient(45deg, #004e61, #007795);
+  box-shadow: 0 10px 20px rgba(0, 119, 149, 0.8);
+  transform: translateY(-3px);
+}
+
+.login-button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 119, 149, 0.5);
+}
+
+.login-footer {
+  font-size: 15px;
+  text-align: center;
+  color: #34495e;
+}
+
+.login-footer a {
+  color: #007795;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.25s ease;
+}
+
+.login-footer a:hover {
+  color: #004e61;
+  text-decoration: underline;
+}

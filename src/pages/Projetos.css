@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap');
+
+.projetos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 120px 20px 60px;
+  background: linear-gradient(120deg, #16222a, #3a6073);
+  width: 100%;
+  min-height: 100vh;
+  animation: fadeIn 1s ease;
+  font-family: 'Outfit', sans-serif;
+  margin-top: 120px;
+}
+
+/* NOVO: título com quadrado */
+.titulo-com-quadrado {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  animation: fadeIn 1.2s ease;
+}
+
+/* Título do bloco de projetos */
+.projetos-titulo {
+  font-size: 32px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Grid de cards */
+.projetos-grid {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1100px;
+  animation: fadeIn 1.4s ease;
+}
+
+/* Card individual */
+.projeto-card {
+  width: 260px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 25px 20px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.4s ease, background-color 0.4s ease;
+  text-decoration: none;
+  color: #ffffff;
+  /* backdrop-filter: blur(6px); */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.projeto-card:hover {
+  transform: translateY(-8px);
+  background-color: rgba(0, 209, 209, 0.1);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.projeto-card h2 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #00d1d1;
+}
+
+.projeto-card p {
+  font-size: 14px;
+  color: #dddddd;
+  line-height: 1.5;
+}
+
+p.breve {
+  font-size: 14px;
+  color: #ff2d20;
+  margin-top: 10px;
+} 
+
+/* Animação global */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

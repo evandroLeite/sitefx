@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(120deg, #16222a, #3a6073);
+}
+
+.main-container {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  padding: 100px 20px;
+}
+
+.card-central {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  animation: fadeIn 1s ease;
+}
+
+.foto-perfil {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #00d1d1;
+  margin-bottom: 20px;
+  transition: transform 0.4s ease;
+}
+
+.foto-perfil:hover {
+  transform: scale(1.05);
+}
+
+.nome {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.cargo {
+  font-size: 16px;
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.social-icons-central {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.social-icons-central a {
+  color: #00d1d1;
+  font-size: 22px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons-central a:hover {
+  transform: scale(1.2);
+  color: #fff;
+}
+
+.resumo-glass {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  color: #e0e0e0;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  text-align: justify;
+  border-left: 4px solid #00d1d1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.botoes-acoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.botoes-acoes button {
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: 2px solid #00d1d1;
+  background: transparent;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.botoes-acoes button:hover {
+  background-color: #00d1d1;
+  color: #0b1e2b;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

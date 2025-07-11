@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap');
+
+/* Contato */
+.contato-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 120px;
+  background: linear-gradient(120deg, #16222a, #3a6073);
+  min-height: 100vh;
+  position: relative;
+  font-family: 'Outfit', sans-serif;
+  animation: fadeIn 1s ease;
+}
+
+/* Header fora da caixa branca */
+.contato-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  top: 0;
+  margin-bottom: -20px;
+  z-index: 2;
+  margin-bottom: 20px;
+}
+
+
+.contato-header h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Caixa branca do formulário */
+.contato-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1.3s ease;
+}
+
+/* Estilização do formulário */
+.formulario-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.formulario-contato input,
+.formulario-contato textarea {
+  padding: 14px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: 'Outfit', sans-serif;
+}
+
+.formulario-contato input::placeholder,
+.formulario-contato textarea::placeholder {
+  color: #cccccc;
+}
+
+.formulario-contato input:focus,
+.formulario-contato textarea:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #00d1d1;
+}
+
+.formulario-contato textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.formulario-contato button {
+  background-color: transparent;
+  color: #00d1d1;
+  border: 2px solid #00d1d1;
+  padding: 12px 18px;
+  border-radius: 25px;
+  font-weight: 500;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.4s ease;
+  font-family: 'Outfit', sans-serif;
+}
+
+.formulario-contato button:hover {
+  background-color: #00d1d1;
+  color: #0b1e2b;
+  transform: translateY(-2px);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

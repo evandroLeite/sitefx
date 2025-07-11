@@ -1,0 +1,16 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import TemplateLayout from "./TemplateLayout";
+import LoginPage from "./pages/Login";
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/sitefx" element={<LoginPage />} />
+        <Route path="/*" element={<TemplateLayout />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

@@ -1,0 +1,15 @@
+.voltar-projetos {
+  display: flex;
+  align-items: center;
+  color: #00d1d1;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.voltar-projetos:hover {
+  color: #00a3a3;
+  transform: translateX(-4px);
+}

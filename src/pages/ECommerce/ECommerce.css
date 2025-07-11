@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap');
+
+.ecommerce-container {
+  margin-top: 160px;
+  padding: 40px 20px;
+  background: linear-gradient(120deg, #16222a, #3a6073);
+  color: #fff;
+  min-height: 600px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Outfit', sans-serif;
+  animation: fadeIn 1s ease;
+}
+
+.titulo {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin: 40px auto 20px auto;
+  justify-content: center;
+}
+
+.titulo .quadrado-azul {
+  width: 20px;
+  height: 20px;
+  background-color: #00d1d1;
+  border-radius: 4px;
+}
+
+.ecommerce-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.ecommerce-produtos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.ecommerce-produto-card {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ddd;
+  padding: 25px 20px;
+  width: 220px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-left: 3px solid #00d1d1;
+}
+
+.ecommerce-produto-card:hover {
+  transform: translateY(-5px);
+}
+
+.ecommerce-produto-card h2 {
+  font-size: 18px;
+  color: #00d1d1;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.ecommerce-produto-card p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.ecommerce-produto-card button {
+  background-color: #00d1d1;
+  color: #ffffff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: auto;
+}
+
+.ecommerce-produto-card button:hover {
+  background-color: #00a3a3;
+}
+
+.ecommerce-carrinho {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ddd;
+  padding: 25px 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+  border-left: 3px solid #00d1d1;
+}
+
+.ecommerce-carrinho h2,
+.carrinho-titulo {
+  color: #00d1d1;
+  font-weight: 600;
+  font-size: 22px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ecommerce-carrinho ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 10px;
+}
+
+.carrinho-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #444;
+  padding: 6px 0;
+  font-size: 16px;
+}
+
+.ecommerce-carrinho h3 {
+  margin-top: 20px;
+  color: #00d1d1;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+}
+
+.remover-btn {
+  background-color: #c03a2b61;
+  margin-left: 24px;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.remover-btn:hover {
+  background-color: #e74c3c;
+}
+
+.ecommerce-checkout {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.ecommerce-checkout button {
+  background-color: #00d1d1;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.ecommerce-checkout button:hover {
+  background-color: #00a3a3;
+}
+
+.ecommerce-checkout button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.react-icon-animated {
+  animation: girar 3s linear infinite;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes moverParaFrenteTras {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(6px); 
+  }
+}
+
+.icon-animado {
+  display: inline-block;
+  animation: moverParaFrenteTras 1.2s ease-in-out infinite;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

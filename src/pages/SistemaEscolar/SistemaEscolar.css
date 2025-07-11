@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap');
+
+/* Container geral */
+.sistema-escolar-container {
+  margin-top: 120px;
+  padding: 30px 40px;
+  background: linear-gradient(120deg, #16222a, #3a6073);
+  min-height: 100vh;
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.titulo-com-quadrado {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Espaço entre quadrado e texto */
+  margin-bottom: 30px;
+}
+/* Título principal */
+.sistema-escolar-container > h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-align: center;
+  /* user-select: none; */
+}
+
+/* Nav abas */
+.abas-nav {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 25px;
+  /* user-select: none; */
+}
+
+/* Botões das abas */
+.aba-button {
+  background-color: transparent;
+  border: 2px solid #00d1d1;
+  color: #00d1d1;
+  font-weight: 700;
+  padding: 8px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.35s ease, color 0.35s ease, box-shadow 0.35s ease;
+  box-shadow: inset 0 0 0 rgba(0, 209, 209, 0);
+}
+
+.aba-button:hover {
+  background-color: #00d1d1;
+  color: #16222a;
+  box-shadow: inset 0 0 10px rgba(0, 209, 209, 0.7);
+}
+
+.aba-button.ativa {
+  background-color: #00d1d1;
+  color: #16222a;
+  box-shadow: inset 0 0 15px rgba(0, 209, 209, 0.85);
+  cursor: default;
+}
+
+/* Wrapper da tabela */
+.tabela-container {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  max-width: 900px;
+  /* user-select: none; */
+  color: #ddd;
+}
+
+/* Título da tabela */
+.tabela-container > h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #00d1d1;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* Botão Incluir / Cancelar */
+.tabela-container > button {
+  background-color: transparent;
+  border: 2px solid #00d1d1;
+  color: #00d1d1;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.tabela-container > button:hover {
+  background-color: #00d1d1;
+  color: #16222a;
+}
+
+/* Formulário de inclusão */
+.tabela-container form {
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: inset 0 0 15px rgba(0, 209, 209, 0.35);
+}
+
+/* Campos do formulário */
+.tabela-container form > div {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.tabela-container form label {
+  width: 140px;
+  color: #00d1d1;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.tabela-container form input {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #00d1d1;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ddd;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.tabela-container form input:focus {
+  border-color: #00a3a3;
+  outline: none;
+}
+
+/* Botão salvar do formulário */
+.tabela-container form button[type="submit"] {
+  background-color: #00d1d1;
+  border: none;
+  color: #16222a;
+  font-weight: 700;
+  padding: 12px 28px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.tabela-container form button[type="submit"]:hover {
+  background-color: #00a3a3;
+}
+
+/* Tabela */
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  color: #ddd;
+  font-size: 1rem;
+}
+
+.tabela th,
+.tabela td {
+  border: 1px solid #00d1d1;
+  padding: 14px 18px;
+  text-align: left;
+}
+
+.tabela th {
+  background-color: #00d1d1;
+  font-weight: 700;
+  /* user-select: none; */
+  color: #16222a;
+}
+
+.tabela tbody tr:nth-child(even) {
+  background-color: rgba(0, 209, 209, 0.1);
+}
+
+.tabela tbody tr:hover {
+  background-color: rgba(0, 209, 209, 0.2);
+  cursor: default;
+}
+
+/* Botão excluir */
+.excluir-btn {
+  background-color: transparent;
+  border: 2px solid #c03a2b61;
+  color: #c03a2b;
+  padding: 8px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.excluir-btn:hover {
+  background-color: #e74c3c;
+  color: #fff;
+}

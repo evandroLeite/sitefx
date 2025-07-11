@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap');
+
+/* Container principal */
+.curriculo-container {
+  padding: 120px 20px 60px;
+  background: linear-gradient(120deg, #16222a, #3a6073);
+  color: #fff;
+  min-height: 100vh;
+  font-family: 'Outfit', sans-serif;
+  animation: fadeIn 1s ease;
+}
+
+/* Header com quadrado azul */
+.curriculo-header {
+  margin: 60px auto 50px;
+  max-width: 800px;
+  animation: fadeIn 1.2s ease;
+  text-align: center;
+}
+
+.titulo-com-quadrado {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.quadrado-azul {
+  width: 20px;
+  height: 20px;
+  background-color: #00d1d1;
+  border-radius: 4px;
+}
+
+.projetos-titulo {
+  font-size: 32px;
+  color: #ffffff;
+  margin: 0;
+  font-weight: 600;
+}
+
+/* Subtítulo */
+.curriculo-header p {
+  font-size: 16px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* Seções (formação, experiência, etc.) */
+.secao {
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+.secao h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  border-left: 5px solid #00d1d1;
+  padding-left: 12px;
+}
+
+/* Card de item */
+.item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px 25px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  border-left: 3px solid #00d1d1;
+  transition: transform 0.3s ease;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+.item h3 {
+  font-size: 18px;
+  color: #00d1d1;
+  margin-bottom: 5px;
+}
+
+.item span {
+  font-size: 14px;
+  color: #bbb;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.item p {
+  font-size: 15px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+/* Lista de skills */
+.skills-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.skills-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 18px;
+}
+
+/* Animação fade-in global */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
